@@ -70,16 +70,7 @@ docker-compose up --build
 **Eureka Dashboard**: http://localhost:8761
 
 ---
-## ⚙️ **Core Services**
 
-| Service                | Key Technologies                 | Responsibility                          |
-|------------------------|----------------------------------|-----------------------------------------|
-| **RAG Assistant**      | GPT-4, pgvector, Spring AI      | AI-powered patient guidance             |
-| **Appointment**        | Spring Boot, JPA                | Appointment lifecycle management        |
-| **Notification**       | Kafka, JavaMailSender           | Email notifications                     |
-| **Reminder**           | Twilio API                      | SMS reminders                           |
-| **Config**             | Spring Cloud Config             | Centralized configuration               |
-| **Gateway**            | Spring Cloud Gateway            | API routing & load balancing            |
 
 
 
