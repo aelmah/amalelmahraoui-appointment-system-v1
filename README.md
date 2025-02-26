@@ -114,11 +114,11 @@ docker-compose up --build
 ### Credits
 Special thanks to my supervisor
 
-[**Dr. EL OUAHIDI Bouabid**](#https://www.researchgate.net/profile/Bouabid-Ouahidi)
+[**Dr. EL OUAHIDI Bouabid**](https://www.researchgate.net/profile/Bouabid-Ouahidi)
 
 *Department of Computer Science*
 
-[Mohammed V university of Rabat](#https://www.um5.ac.ma/) 
+[Mohammed V University of Rabat](https://www.um5.ac.ma) 
 
 
 ## 🔗 Useful Links
