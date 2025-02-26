@@ -38,7 +38,6 @@ A clinic appointment system  designed to facilitate patient appointments, doctor
 ├── gateway-service/
 ├── notification-service/
 ├── rag-assistant/                   # Spring AI + GPT-4 RAG
-├── rag-assistant-langchain/         # Langchain4j + Astradb variant
 ├── reminder-service/
 ├── config-repo/
 └── docker-compose.yml
