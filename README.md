@@ -7,26 +7,25 @@
 ---
 
 ##  **Project Overview**
-A clinic appointment system featuring:
-- Patient appointment booking 
-- Doctor/service selection 
-- SMS/email reminders & notifications
-- Patient feedback collection
-- **RAG Assistant** chatbot (GPT-4 powered) for guided assistance
+A clinic appointment system  designed to facilitate patient appointments, doctor selection, service bookings, reminders, notifications, and feedback collection. Patients can interact with the **RAG Assistant**, a chatbot that helps guide them in booking appointments, choosing the right doctor, understanding services, and checking prices. The backend is implemented using microservices, with each service responsible for a specific functionality in the system. 
 
 
-###  Key Features
-**Smart RAG Assistant:** Context-aware chatbot using Retrieval-Augmented Generation
 
-**Auto-Scaling:** Docker-based microservice orchestration
 
-**Unified Config:** Centralized configuration management
-
-**Async Communication:** Kafka for notifications/reminders
-
-**Twilio Integration:** SMS reminders via Twilio API
 
 ---
+## Service Details
+
+| Service               | Description                                                                                     | Tech Stack                                                                 |
+|-----------------------|-------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
+| **RAG Assistant**     | Chatbot helping patients with booking, doctor selection, and service information               | Spring AI, OpenAI GPT-4, pgvector (PostgreSQL)                            |
+| **Appointment Service** | Manages appointment creation, viewing, updating, and cancellation                             | Spring Boot, JPA, **MySQL (appointment_db)**                              |
+| **Notification Service** | Sends email notifications about appointment updates                                           | JavaMailSender, Kafka                                                      |
+| **Reminder Service**    | Sends SMS reminders for upcoming appointments                                                 | Twilio API                                                                 |
+| **Discovery Service**   | Manages microservice discovery and inter-service communication                                | Eureka                                                                     |
+| **Config Service**      | Provides centralized configuration management                                                | Spring Cloud Config                                                        |
+| **Feedbacks Service**   | Collects and manages patient feedback                                                        | Spring Boot, JPA (Hibernate), **MySQL (feedbacks_db)**                     |
+| **API Gateway**         | Routes external requests to appropriate microservices                                        | Spring Cloud Gateway                                                       |
 
 ## 📂 **Repository Structure**
 ```bash
@@ -85,25 +84,6 @@ docker-compose up --build
 
 
 
----
-## 🙏 Credits
-Special thanks to my professor 
-
-[**Dr. EL OUAHIDI Bouabid**](#https://www.researchgate.net/profile/Bouabid-Ouahidi)
-
-*Department of Computer Science*
-
-[Mohammed V university of Rabat](#https://www.um5.ac.ma/) 
-
-Provided expert guidance on:
-
-- Microservices architecture design
-
-- RAG implementation strategies
-
-- System integration best practices 
-
-
 ## 🖥️ **User Interface Preview**
 
 <div align="center">
@@ -138,4 +118,24 @@ Provided expert guidance on:
 
 
 
-**Note:** the frontend code will be available soon after final improvements!
+**Note:** The frontend code  for the appointment system is coming soon and is being actively developed to include additional features and UI enhancements.
+
+---
+### Credits
+Special thanks to my supervisor
+
+[**Dr. EL OUAHIDI Bouabid**](#https://www.researchgate.net/profile/Bouabid-Ouahidi)
+
+*Department of Computer Science*
+
+[Mohammed V university of Rabat](#https://www.um5.ac.ma/) 
+
+
+## 🔗 Useful Links
+
+### Alternative Implementations
+Find an alternative implementation of the RAG Assistant using Langchain4j + Open AI + Astradb here 
+**[RAG Assistant (Langchain4j + Astradb Version)](https://github.com/aelmah/RAG-langchain4j-astradb)**  
+ 
+
+
