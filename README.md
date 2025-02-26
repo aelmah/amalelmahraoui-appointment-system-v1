@@ -1,6 +1,6 @@
 #### **Appointment System - Microservices-Based Distributed System** 
 
-*This project was submitted as the **final module project** for the Microservices-Based Distributed Systems course. Code will be available soon after final improvements!*
+*This project was submitted as the **final module project** for the Microservices-Based Distributed Systems course.*
 
 
 
