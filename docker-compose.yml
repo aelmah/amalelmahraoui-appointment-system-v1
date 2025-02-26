@@ -1,4 +1,4 @@
-services:
+services:git
   postgresql:
     container_name: ms_pg_sql
     image: pgvector/pgvector:pg16
