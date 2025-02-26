@@ -19,12 +19,12 @@ A clinic appointment system  designed to facilitate patient appointments, doctor
 | Service               | Description                                                                                     | Tech Stack                                                                 |
 |-----------------------|-------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
 | **RAG Assistant**     | Chatbot helping patients with booking, doctor selection, and service information               | Spring AI, OpenAI GPT-4, pgvector (PostgreSQL)                            |
-| **Appointment Service** | Manages appointment creation, viewing, updating, and cancellation                             | Spring Boot, JPA, **MySQL (appointment_db)**                              |
+| **Appointment Service** | Manages appointment creation, viewing, updating, and cancellation                             | Spring Boot, JPA, MySQL                               |
 | **Notification Service** | Sends email notifications about appointment updates                                           | JavaMailSender, Kafka                                                      |
 | **Reminder Service**    | Sends SMS reminders for upcoming appointments                                                 | Twilio API                                                                 |
 | **Discovery Service**   | Manages microservice discovery and inter-service communication                                | Eureka                                                                     |
 | **Config Service**      | Provides centralized configuration management                                                | Spring Cloud Config                                                        |
-| **Feedbacks Service**   | Collects and manages patient feedback                                                        | Spring Boot, JPA (Hibernate), **MySQL (feedbacks_db)**                     |
+| **Feedbacks Service**   | Collects and manages patient feedback                                                        | Spring Boot, JPA (Hibernate), MySQL                      |
 | **API Gateway**         | Routes external requests to appropriate microservices                                        | Spring Cloud Gateway                                                       |
 
 ## 📂 **Repository Structure**
